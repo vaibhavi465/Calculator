@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon2.png">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly>
+        <ul class="nav">
+            <a href="#" onclick="appendCharacter('1')">
+                <i class="fa-solid fa-1"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('2')">
+               <i class="fa-solid fa-2"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('3')">
+                <i class="fa-solid fa-3"></i>
+            </a>
+            <a href="#"onclick="deleteRightmost()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="#" onclick="appendCharacter('4')">
+                <i class="fa-solid fa-4"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('5')">
+               <i class="fa-solid fa-5"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('6')">
+                <i class="fa-solid fa-6"></i>
+            </a>
+            <a href="#" onclick="performOperation('+')">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('7')">
+               <i class="fa-solid fa-7"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('8')">
+                <i class="fa-solid fa-8"></i>
+            </a>
+            <a href="#" onclick="performOperation('9')">
+                <i class="fa-solid fa-9"></i>
+            </a>
+            <a href="#"onclick="performOperation('-')">
+                <i class="fa-solid fa-minus"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('.')">
+                <p><i class="fa-solid fa-circle fa-2xs"></i></p>
+            </a>
+            <a href="#"onclick="appendCharacter('0')">
+                <i class="fa-solid fa-0"></i>
+            </a>
+            <a href="#"onclick="performOperation('/')">
+                <i class="fa-solid fa-divide"></i>
+            </a>
+            <a href="#"onclick="performOperation('*')">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+            <a href="#"onclick="appendCharacter('00')">
+                <b>00</b>
+            </a>
+            <a href="#"onclick="clearDisplay()">
+                <i class="fa-solid fa-c"></i>
+            </a>
+            <a href="#"onclick="compute()">
+                <i class="fa-solid fa-equals"></i>
+            </a>
+            <a href="#"onclick="applyPercentage()">
+                <i class="fa-solid fa-percent"></i>
+            </a>
+        </ul>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
